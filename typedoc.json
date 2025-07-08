@@ -1,8 +1,8 @@
 {
-  "$schema": "https://typedoc.org/schema.json",
-  "entryPoints": ["./src/index.ts"],
-  "out": "./docs/typedoc",
-  "tsconfig": "tsconfig.json",
-  "skipErrorChecking": true, // (REF:#TD-1)
-  "plugin": ["typedoc-material-theme", "typedoc-plugin-missing-exports"]
+        "$schema": "https://typedoc.org/schema.json",
+        "entryPoints": ["./src/index.ts"],
+        "out": "./docs/typedoc",
+        "tsconfig": "tsconfig.json",
+        "skipErrorChecking": true, // (REF:#TD-1)
+        "plugin": ["typedoc-material-theme", "typedoc-plugin-missing-exports"]
 }
