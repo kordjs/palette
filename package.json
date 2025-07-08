@@ -1,55 +1,56 @@
 {
-  "name": "@kordjs/palette",
-  "version": "1.0.0",
-  "description": "A flexible and expressive terminal styling toolkit. Bring color, icons, borders, and layout to life.",
-  "main": "dist/index.js",
-  "publishConfig": {
-    "access": "public"
-  },
-  "exports": {
-    "types": "./dist/index.d.ts",
-    "import": "./dist/index.mjs",
-    "require": "./dist/index.js"
-  },
-  "files": [
-    "dist/",
-    "README.md"
-  ],
-  "scripts": {
-    "build": "tsup",
-    "pretty": "prettier --write .",
-    "lint": "eslint -c ./eslint.config.mjs .",
-    "release": "release-it",
-    "docs": "typedoc",
-    "prepack": "npm run build && npm run lint"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/kordjs/palette.git"
-  },
-  "keywords": [
-    "palette",
-    "kordjs"
-  ],
-  "author": "0sapphy",
-  "license": "Apache-2.0",
-  "bugs": {
-    "url": "https://github.com/kordjs/palette/issues"
-  },
-  "homepage": "https://github.com/kordjs/palette#readme",
-  "devDependencies": {
-    "@eslint/js": "^9.29.0",
-    "@release-it/conventional-changelog": "^10.0.1",
-    "conventional-changelog-cli": "^5.0.0",
-    "eslint": "^9.29.0",
-    "globals": "^16.2.0",
-    "prettier": "^3.5.3",
-    "release-it": "^19.0.3",
-    "tsup": "^8.5.0",
-    "typedoc": "^0.28.7",
-    "typedoc-material-theme": "^1.4.0",
-    "typedoc-plugin-missing-exports": "^4.0.0",
-    "typescript": "^5.8.3",
-    "typescript-eslint": "^8.35.0"
-  }
+        "name": "@kordjs/palette",
+        "version": "1.0.0",
+        "description": "A flexible and expressive terminal styling toolkit. Bring color, icons, borders, and layout to life.",
+        "main": "dist/index.js",
+        "publishConfig": {
+                "access": "public"
+        },
+        "exports": {
+                "types": "./dist/index.d.ts",
+                "import": "./dist/index.mjs",
+                "require": "./dist/index.js"
+        },
+        "files": [
+                "dist/",
+                "README.md"
+        ],
+        "scripts": {
+                "build": "tsc --noEmit && tsup",
+                "pretty": "prettier --write .",
+                "lint": "eslint -c ./eslint.config.mjs .",
+                "release": "release-it",
+                "docs": "typedoc",
+                "prepack": "npm run build && npm run lint"
+        },
+        "repository": {
+                "type": "git",
+                "url": "git+https://github.com/kordjs/palette.git"
+        },
+        "keywords": [
+                "palette",
+                "kordjs"
+        ],
+        "author": "0sapphy",
+        "license": "Apache-2.0",
+        "bugs": {
+                "url": "https://github.com/kordjs/palette/issues"
+        },
+        "homepage": "https://github.com/kordjs/palette#readme",
+        "devDependencies": {
+                "@eslint/js": "^9.29.0",
+                "@release-it/conventional-changelog": "^10.0.1",
+                "@types/node": "^24.0.10",
+                "conventional-changelog-cli": "^5.0.0",
+                "eslint": "^9.29.0",
+                "globals": "^16.2.0",
+                "prettier": "^3.5.3",
+                "release-it": "^19.0.3",
+                "tsup": "^8.5.0",
+                "typedoc": "^0.28.7",
+                "typedoc-material-theme": "^1.4.0",
+                "typedoc-plugin-missing-exports": "^4.0.0",
+                "typescript": "^5.8.3",
+                "typescript-eslint": "^8.35.0"
+        }
 }
