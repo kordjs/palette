@@ -1,0 +1,14 @@
+# Else
+dist/
+node_modules
+.gitignore
+
+# Package
+package-lock.json
+
+# Source 
+docs/typedoc
+
+# MarkDown
+CHANGELOG.md
+README.md
