@@ -1,3 +1,2 @@
-export function sum() {
-  return 1 + 2;
-}
+export * from './lib/Palette';
+export * from './lib/Styles';
