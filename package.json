@@ -3,6 +3,7 @@
         "version": "1.0.0",
         "description": "A flexible and expressive terminal styling toolkit. Bring color, icons, borders, and layout to life.",
         "main": "dist/index.js",
+        "packageManager": "pnpm@9.0.0",
         "publishConfig": {
                 "access": "public"
         },
@@ -21,7 +22,7 @@
                 "lint": "eslint -c ./eslint.config.mjs .",
                 "release": "release-it",
                 "docs": "typedoc",
-                "prepack": "npm run build && npm run lint"
+                "prepack": "pnpm build && pnpm lint"
         },
         "repository": {
                 "type": "git",
