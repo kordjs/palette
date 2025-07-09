@@ -4,7 +4,29 @@
                 "@release-it/conventional-changelog": {
                         "preset": "conventionalcommits",
                         "infile": "CHANGELOG.md",
-                        "changelogCommand": "conventional-changelog -p conventionalcommits -i CHANGELOG.md -s -r 0 --from 2.0.1"
+                        "changelogCommand": "conventional-changelog -p conventionalcommits -i CHANGELOG.md -s -r 0 --from 2.0.1",
+                        "types": [
+                                {
+                                        "type": "feat",
+                                        "section": "Features",
+                                        "hidden": false
+                                },
+                                {
+                                        "type": "fix",
+                                        "section": "Bug Fixes",
+                                        "hidden": false
+                                },
+                                {
+                                        "type": "chore",
+                                        "section": "Other",
+                                        "hidden": false
+                                },
+                                {
+                                        "type": "docs",
+                                        "section": "Other",
+                                        "hidden": false
+                                }
+                        ]
                 }
         },
         "git": {
